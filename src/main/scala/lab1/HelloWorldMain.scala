@@ -18,7 +18,6 @@ object HelloWorldMain {
     new Human(12)
     new Human(12)
 
-    println(Human.counter)
   }
 
 }
