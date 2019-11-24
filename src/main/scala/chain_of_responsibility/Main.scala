@@ -8,10 +8,13 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
-    val aggregator = new QuoterAggregator(List(RandomQuoter,
-      MessageQuoter("good to die for our country"),
-      new ShakespeareQuoter()))
-    aggregator.printAllQuoters()
+
+    new ShakespeareQuoter()
+    RandomQuoter
+    MessageQuoter("good to die for our country")
+
+
+    QuoterAggregator.printAllQuoters()
 
   }
 
